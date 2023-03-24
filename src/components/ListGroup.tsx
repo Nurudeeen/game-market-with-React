@@ -1,13 +1,12 @@
 function ListGroup() {
+  const cities = ["Lagos", "Abuja", "Calabar", "Port Harcout", "Kano"]
   return (
     <>
-      <h1>List</h1>
+      <h1>Popular cities in 9ja</h1>
       <ul className="list-group">
-        <li className="list-group-item">An item</li>
-        <li className="list-group-item">A second item</li>
-        <li className="list-group-item">A third item</li>
-        <li className="list-group-item">A fourth item</li>
-        <li className="list-group-item">And a fifth one</li>
+        {cities.map(city=> (
+          <li key = {city}>{city}</li>
+        ))}
       </ul>
     </>
   );
